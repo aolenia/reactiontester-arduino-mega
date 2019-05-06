@@ -269,57 +269,57 @@ void printTime(void) {
 
 void setAllLedsTo(int color) { // 0 == red, 1 == green, 2 == blue, 3 == off 
   if (color == 0) {
-    digitalWrite(LED_RED_1, HIGH);
-    digitalWrite(LED_GREEN_1, LOW);
-    digitalWrite(LED_BLUE_1, LOW);
-    digitalWrite(LED_RED_2, HIGH);
-    digitalWrite(LED_GREEN_2, LOW);
-    digitalWrite(LED_BLUE_2, LOW);
-    digitalWrite(LED_RED_3, HIGH);
-    digitalWrite(LED_GREEN_3, LOW);
-    digitalWrite(LED_BLUE_3, LOW);
-    digitalWrite(LED_RED_4, HIGH);
-    digitalWrite(LED_GREEN_4, LOW);
-    digitalWrite(LED_BLUE_4, LOW);
-  } else if (color == 1) {
     digitalWrite(LED_RED_1, LOW);
     digitalWrite(LED_GREEN_1, HIGH);
-    digitalWrite(LED_BLUE_1, LOW);
-    digitalWrite(LED_RED_2, LOW);
-    digitalWrite(LED_GREEN_2, HIGH);
-    digitalWrite(LED_BLUE_2, LOW);
-    digitalWrite(LED_RED_3, LOW);
-    digitalWrite(LED_GREEN_3, HIGH);
-    digitalWrite(LED_BLUE_3, LOW);
-    digitalWrite(LED_RED_4, LOW);
-    digitalWrite(LED_GREEN_4, HIGH);
-    digitalWrite(LED_BLUE_4, LOW);
-  } else if (color == 2) {
-    digitalWrite(LED_RED_1, LOW);
-    digitalWrite(LED_GREEN_1, LOW);
     digitalWrite(LED_BLUE_1, HIGH);
     digitalWrite(LED_RED_2, LOW);
-    digitalWrite(LED_GREEN_2, LOW);
+    digitalWrite(LED_GREEN_2, HIGH);
     digitalWrite(LED_BLUE_2, HIGH);
     digitalWrite(LED_RED_3, LOW);
-    digitalWrite(LED_GREEN_3, LOW);
+    digitalWrite(LED_GREEN_3, HIGH);
     digitalWrite(LED_BLUE_3, HIGH);
     digitalWrite(LED_RED_4, LOW);
+    digitalWrite(LED_GREEN_4, HIGH);
+    digitalWrite(LED_BLUE_4, HIGH);
+  } else if (color == 1) {
+    digitalWrite(LED_RED_1, HIGH);
+    digitalWrite(LED_GREEN_1, LOW);
+    digitalWrite(LED_BLUE_1, HIGH);
+    digitalWrite(LED_RED_2, HIGH);
+    digitalWrite(LED_GREEN_2, LOW);
+    digitalWrite(LED_BLUE_2, HIGH);
+    digitalWrite(LED_RED_3, HIGH);
+    digitalWrite(LED_GREEN_3, LOW);
+    digitalWrite(LED_BLUE_3, HIGH);
+    digitalWrite(LED_RED_4, HIGH);
     digitalWrite(LED_GREEN_4, LOW);
     digitalWrite(LED_BLUE_4, HIGH);
-  } else if (color == 3) {
-    digitalWrite(LED_RED_1, LOW);
-    digitalWrite(LED_GREEN_1, LOW);
+  } else if (color == 2) {
+    digitalWrite(LED_RED_1, HIGH);
+    digitalWrite(LED_GREEN_1, HIGH);
     digitalWrite(LED_BLUE_1, LOW);
-    digitalWrite(LED_RED_2, LOW);
-    digitalWrite(LED_GREEN_2, LOW);
+    digitalWrite(LED_RED_2, HIGH);
+    digitalWrite(LED_GREEN_2, HIGH);
     digitalWrite(LED_BLUE_2, LOW);
-    digitalWrite(LED_RED_3, LOW);
-    digitalWrite(LED_GREEN_3, LOW);
+    digitalWrite(LED_RED_3, HIGH);
+    digitalWrite(LED_GREEN_3, HIGH);
     digitalWrite(LED_BLUE_3, LOW);
-    digitalWrite(LED_RED_4, LOW);
-    digitalWrite(LED_GREEN_4, LOW);
+    digitalWrite(LED_RED_4, HIGH);
+    digitalWrite(LED_GREEN_4, HIGH);
     digitalWrite(LED_BLUE_4, LOW);
+  } else if (color == 3) {
+    digitalWrite(LED_RED_1, HIGH);
+    digitalWrite(LED_GREEN_1, HIGH);
+    digitalWrite(LED_BLUE_1, HIGH);
+    digitalWrite(LED_RED_2, HIGH);
+    digitalWrite(LED_GREEN_2, HIGH);
+    digitalWrite(LED_BLUE_2, HIGH);
+    digitalWrite(LED_RED_3, HIGH);
+    digitalWrite(LED_GREEN_3, HIGH);
+    digitalWrite(LED_BLUE_3, HIGH);
+    digitalWrite(LED_RED_4, HIGH);
+    digitalWrite(LED_GREEN_4, HIGH);
+    digitalWrite(LED_BLUE_4, HIGH);
   }
 }
 
@@ -365,19 +365,19 @@ int setLedToRed(int numberOfPad) {
   int padNumber = 0;
   switch (numberOfPad) {
     case 1:
-      digitalWrite(LED_RED_1, HIGH);
+      digitalWrite(LED_RED_1, LOW);
       padNumber = 1;
       break;
     case 2:
-      digitalWrite(LED_RED_2, HIGH);
+      digitalWrite(LED_RED_2, LOW);
       padNumber = 2;
       break;
     case 3:
-      digitalWrite(LED_RED_3, HIGH);
+      digitalWrite(LED_RED_3, LOW);
       padNumber = 3;
       break;
     case 4:
-      digitalWrite(LED_RED_4, HIGH);
+      digitalWrite(LED_RED_4, LOW);
       padNumber = 4;
       break;
   }
@@ -387,19 +387,19 @@ int setLedToBlue(int numberOfPad) {
   int padNumber = 0;
   switch (numberOfPad) {
     case 1:
-      digitalWrite(LED_BLUE_1, HIGH);
+      digitalWrite(LED_BLUE_1, LOW);
       padNumber = 1;
       break;
     case 2:
-      digitalWrite(LED_BLUE_2, HIGH);
+      digitalWrite(LED_BLUE_2, LOW);
       padNumber = 2;
       break;
     case 3:
-      digitalWrite(LED_BLUE_3, HIGH);
+      digitalWrite(LED_BLUE_3, LOW);
       padNumber = 3;
       break;
     case 4:
-      digitalWrite(LED_BLUE_4, HIGH);
+      digitalWrite(LED_BLUE_4, LOW);
       padNumber = 4;
       break;
   }
