@@ -1,0 +1,7 @@
+6.5.2019
+-modified rgd leds from common cathode to common anode 
+7.5.2019
+- on setup, shutdown all leds row 622
+- bug where on Game2 doesnt regocnize else pads then no. 1.
+	-on Game2, all cases were comparing to distance1, now comparing to correct Distance1,2,3,4 
+

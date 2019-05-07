@@ -514,7 +514,7 @@ void playGame2(void) {
           }
           break;
         case 2:
-          if (distance1 <= DISTANCE || overRide == 1) {
+          if (distance2 <= DISTANCE || overRide == 1) {
             sensingTime[game2NoOfRounds] = millis();
 //            Serial.print("SensingTime: ");
 //            Serial.print(sensingTime[game2NoOfRounds]);
@@ -528,7 +528,7 @@ void playGame2(void) {
           }
           break;
         case 3:
-          if (distance1 <= DISTANCE || overRide == 1) {
+          if (distance3 <= DISTANCE || overRide == 1) {
             sensingTime[game2NoOfRounds] = millis();
 //            Serial.print("SensingTime: ");
 //            Serial.print(sensingTime[game2NoOfRounds]);
@@ -542,7 +542,7 @@ void playGame2(void) {
           }
           break;
         case 4:
-          if (distance1 <= DISTANCE || overRide == 1) {
+          if (distance4 <= DISTANCE || overRide == 1) {
             sensingTime[game2NoOfRounds] = millis();
 //            Serial.print("SensingTime: ");
 //            Serial.print(sensingTime[game2NoOfRounds]);
@@ -618,7 +618,9 @@ void setup() {
   pinMode(LED_RED_4, OUTPUT);
   pinMode(LED_GREEN_4, OUTPUT);
   pinMode(LED_BLUE_4, OUTPUT);
-
+  
+  setAllLedsTo(3); // shutdown all leds
+  
   // set up the LCD's number of columns and rows:
   lcd.begin(20, 4);
   // Print a message to the LCD.
